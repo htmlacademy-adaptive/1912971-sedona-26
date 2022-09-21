@@ -1,0 +1,132 @@
+.promo-wrapper-background {
+  background-image: url("/source/img/jpeg-png/mobile/big-promo-background-wrapper-mobile.jpg");
+  background-color: #d9e7f2;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 389px;
+
+  @media (min-width: @tablet-width) {
+    height: 518px;
+    background-image: url("/source/img/jpeg-png/tablet/big-promo-background-wrapper-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 518px;
+    background-image: url("/source/img/jpeg-png/desktop/big-promo-background-wrapper-desktop.jpg");
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution: 2dppx) {
+    background-image: url("/source/img/jpeg-png/tablet/big-promo-background-wrapper-tablet-2x.jpg");
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+    background-image: url("/source/img/jpeg-png/desktop/big-promo-background-wrapper-desktop-2x.jpg");
+  }
+}
+
+.promo-wrapper-background__logo {
+  margin: auto;
+  position: absolute;
+  top: 4px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+    top: -15px;
+    bottom: 0;
+    left: -2px;
+    right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 461px;
+    height: 350px;
+    top: -15px;
+    bottom: 0;
+    left: -2px;
+    right: 0;
+  }
+}
+
+.promo-subwrapper-background {
+  @media (min-width: @tablet-width) {
+    padding: 15px 100px 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 26px 265px;
+  }
+}
+
+.promo-subwrapper-background__title {
+  margin: 0;
+  padding: 34px 30px 0;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+}
+
+.promo-subwrapper-background__description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 17px;
+  }
+}
+
+.promo-subwrapper-background::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 57px;
+  background-image: url("/source/img/svg/intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("/source/img/svg/promo-triangle-tablet.svg");
+    bottom: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("/source/img/svg/promo-triangle-desktop.svg");
+    bottom: -1px;
+  }
+}
+
+.ipromo-subwrapper-background::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 37px;
+  background-image: url("/source/img/svg/promo-triangle-down-mobile.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}

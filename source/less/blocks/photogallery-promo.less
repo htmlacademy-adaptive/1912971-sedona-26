@@ -1,0 +1,94 @@
+.promo-wrapper-background.wrapper-photogallery {
+  background-image: url("/source/img/jpeg-png/mobile/small-promo-background-wrapper-mobile.jpg");
+  background-color: #d9e7f2;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 158px;
+
+  @media (min-width: @tablet-width) {
+    height: 290px;
+    background-image: url("/source/img/jpeg-png/tablet/small-promo-background-wrapper-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 290px;
+    background-image: url("/source/img/jpeg-png/desktop/small-promo-background-wrapper-desktop.jpg");
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution: 2dppx) {
+    background-image: url("/source/img/jpeg-png/tablet/small-promo-background-wrapper-tablet-2x.jpg");
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+    background-image: url("/source/img/jpeg-png/desktop/small-promo-background-wrapper-desktop-2x.jpg");
+  }
+}
+
+.promo-wrapper-background__logo-photogallery {
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: -22px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 457px;
+    height: 78px;
+    top: -19px;
+  }
+}
+
+.promo-photogallery-subwrapper-background {
+  margin-bottom: 44px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 86px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 88px;
+    margin-top: 67px;
+  }
+}
+
+.promo-photogallery-subwrapper-background__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 31px;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 33px;
+    margin-bottom: 33px;
+  }
+}
+
+.promo-photogallery-subwrapper-background__description {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0 161px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0 385px;
+  }
+}

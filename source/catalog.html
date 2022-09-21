@@ -3,218 +3,205 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Фото и видео</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
+  <div class="page-wrapper"></div>
 
   <!-- Шапка -->
 
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
+
+    <a class="logo main-nav__logo" href="index.html">
       <img src="/source/img/svg/logo.svg" width="185" height="96" alt="Седона">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toogle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <button class="main-nav__toogle main-nav__toogle--closed" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="main-nav main-nav--closed main-nav__toogle--nojs">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list nav-list">
-          <li class="nav-list__item nav-list__item--active">
-            <a href="index.html">
+          <li class="nav-list__item nav-list__item--active nav-list-item">
+            <a class="nav-list-item__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="nav-list__item">
-            <a href="catalog.html">
+          <li class="nav-list__item nav-list-item">
+            <a class="nav-list-item__link" href="catalog.html">
               Фото и видео
             </a>
           </li>
-          <li class="nav-list__item">
-            <a href="form.html">
+          <li class="nav-list__item nav-list-item">
+            <a class="nav-list-item__link" href="form.html">
               Форма отзыва
             </a>
           </li>
-          <li class="nav-list__item">
-            <a href="#">
+          <li class="nav-list__item nav-list-item">
+            <a class="nav-list-item__link" href="https://htmlacademy.ru">
               HTML Academy
             </a>
           </li>
         </ul>
       </div>
     </nav>
-
-    <div class="main-header__image-wrapper form-header__image-wrapper--index">
-      <img class="form__logo" src="/source/img/svg/sedona-form-logo.svg" width="229" height="39" alt="Седона">
-    </div>
   </header>
+
+  <div class="main-header__image-wrapper form-header__image-wrapper--index">
+    <img class="form__logo" src="/source/img/svg/sedona-form-logo.svg" width="229" height="39" alt="Седона">
+  </div>
 
   <!-- Контентная часть страницы -->
 
   <main class="main-container">
-
-    <header class="main-container__header main-container__header--catalog">
-      <h1 class="main-container__title">Фото и видео</h1>
-      <p class="main-container__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-        забыть о политике и экономике.</p>
+    <header class="promo">
+      <div class="promo__wrapper promo-wrapper-background wrapper-photogallery">
+        <img class="promo-wrapper-background__logo-photogallery" src="/source/img/svg/text-sedona-catalog-mobile.svg"
+          width="229" height="39" alt="Седона">
+      </div>
+      <div class="promo__wrapper promo-photogallery-subwrapper-background">
+        <h1 class="promo-photogallery-subwrapper-background__title title">Фото и видео</h1>
+        <p class="promo-photogallery-subwrapper-background__description description">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
     </header>
 
-    <section class="main-container__gallery">
-      <h2 class="visually-hidden">Галлерея фотографий</h2>
+    <section class="photo-gallery">
 
-      <article class="shoot shoot--full">
-        <a class="shoot__link" href="#">
-          <img src="/source/img/jpeg-png/gallery-1.jpg" width="280" height="280" alt="Просторы">
-        </a>
+      <div class="photo-gallery__wrapper">
+        <h2 class="visually-hidden">Галлерея фотографий</h2>
 
-        <div class="shoot__description shoot__data--full">
-          <div class="shoot__description">
-            <h3 class="shoot__title">Неродные просторы</h3>
-            <p class="shoot__author">Автор фото: Борис</p>
+        <ul class="photo-gallery__list">
+          <li class="photo-gallery__item">
+            <img src="/source/img/jpeg-png/mobile/photo-gallery-1-mobile.jpg" width="280" height="280" alt="Просторы">
+
+            <div class="photo-gallery-item-wrapper">
+              <p class="photo-gallery-item__title title">Неродные просторы</p>
+              <p class="photo-gallery-item__author description">Автор фото: Борис</p>
+              <button class="photo-gallery-item__like" type="button">
+                <img class="like__icon" src="/source/img/svg/like-icon.svg" width="23" height="21" alt="Палец вверх">
+                <span class="visually-hidden">Лайк</span>
+              </button>
+              <span class="photo-gallery-item__like amount-like title">1350</span>
+            </div>
+          </li>
+
+          <li class="photo-gallery__item">
+            <img src="/source/img/jpeg-png/mobile/photo-gallery-2-mobile.jpg" width="280" height="280" alt="Кактус">
+
+            <div class="photo-gallery-item-wrapper">
+              <p class="photo-gallery-item__title title">Местная растительность</p>
+              <p class="photo-gallery-item__author description">Автор фото: Сергей</p>
+              <button class="photo-gallery-item__like" type="button">
+                <img class="like__icon" src="/source/img/svg/like-icon.svg" width="23" height="21" alt="Палец вверх">
+                <span class="visually-hidden">Лайк</span>
+              </button>
+              <span class="photo-gallery-item__like amount-like title">143</span>
+            </div>
+          </li>
+
+          <li class="photo-gallery__item">
+            <img src="/source/img/jpeg-png/mobile/photo-gallery-3-mobile.jpg" width="280" height="280" alt="Дорога">
+
+            <div class="photo-gallery-item-wrapper">
+              <p class="photo-gallery-item__title title">Дорога на север</p>
+              <p class="photo-gallery-item__author description">Автор фото: Петр</p>
+              <button class="photo-gallery-item__like" type="button">
+                <img class="like__icon" src="/source/img/svg/like-icon.svg" width="23" height="21" alt="Палец вверх">
+                <span class="visually-hidden">Лайк</span>
+              </button>
+              <span class="photo-gallery-item__like amount-like title">96</span>
+            </div>
+          </li>
+
+          <li class="photo-gallery__item">
+            <img src="/source/img/jpeg-png/mobile/photo-gallery-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
+
+            <div class="photo-gallery-item-wrapper">
+              <p class="photo-gallery-item__title title">Мост дьявола</p>
+              <p class="photo-gallery-item__author description">Автор фото: Антон</p>
+              <button class="photo-gallery-item__like" type="button">
+                <img class="like__icon" src="/source/img/svg/like-icon.svg" width="23" height="21" alt="Палец вверх">
+                <span class="visually-hidden">Лайк</span>
+              </button>
+              <span class="photo-gallery-item__like amount-like title">254</span>
+            </div>
+          </li>
+        </ul>
+
+        <section class="photo-gallery__item--video-item">
+          <div class="photo-gallery-item-video-wrapper">
+              <p class="photo-gallery-item__title-video title">Все еще сомневаетесь?</p>
+              <p class="photo-gallery-item__description-video description">
+                  Смотрите видеопрезентацию и<br />
+                  скорее за билетами, пока они не<br />
+                  подорожали в очередной раз!
+              </p>
           </div>
 
-          <div class="shoot__like">
-            <button class="button-like" type="button">
-              <img class="button-like__icon" src="/source/img/svg/like-icon.svg" width="23" height="21"
-                alt="Палец вверх">
-              <span class="visually-hidden">Лайк</span>
+          <div class="video-wrapper">
+            <img class="video-clip__image" src="/source/img/jpeg-png/mobile/video-mobile.jpg" width="280" height="177"
+              alt="Видео-презентация Седоны">
+
+            <button class="photo-gallery-item__marker" type="button">
+              <span class="visually-hidden">Воспроизвести</span>
+              <img class="video-controls__icon" src="/source/img/svg/play-button-video.svg" width="48" height="55"
+                alt="Кнопка плэй">
             </button>
-            <span class="shoot__like-count">1350</span>
           </div>
-        </div>
-      </article>
+        </section>
 
-      <article class="shoot shoot--full">
-        <a class="shoot__link" href="#">
-          <img src="/source/img/jpeg-png/gallery-2.jpg" width="280" height="280" alt="Кактус">
-        </a>
-
-        <div class="shoot__description shoot__data--full">
-          <div class="shoot__description">
-            <h3 class="shoot__title">Местная растительность</h3>
-            <p class="shoot__author">Автор фото: Сергей</p>
-          </div>
-
-          <div class="shoot__like">
-            <button class="button-like" type="button">
-              <img class="button-like__icon" src="/source/img/svg/like-icon.svg" width="23" height="21"
-                alt="Палец вверх">
-              <span class="visually-hidden">Лайк</span>
-            </button>
-            <span class="shoot__like-count">143</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="shoot shoot--full">
-        <a class="shoot__link" href="#">
-          <img src="/source/img/jpeg-png/gallery-3.jpg" width="280" height="280" alt="Дорога">
-        </a>
-
-        <div class="shoot__description shoot__data--full">
-          <div class="shoot__description">
-            <h3 class="shoot__title">Дорога на север</h3>
-            <p class="shoot__author">Автор фото: Петр</p>
-          </div>
-
-          <div class="shoot__like">
-            <button class="button-like" type="button">
-              <img class="button-like__icon" src="/source/img/svg/like-icon.svg" width="23" height="21"
-                alt="Палец вверх">
-              <span class="visually-hidden">Лайк</span>
-            </button>
-            <span class="shoot__like-count">96</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="shoot shoot--full">
-        <a class="shoot__link" href="#">
-          <img src="/source/img/jpeg-png/gallery-4.jpg" width="280" height="280" alt="Мост дьявола">
-        </a>
-
-        <div class="shoot__description shoot__data--full">
-          <div class="shoot__description">
-            <h3 class="shoot__title">Мост дьявола</h3>
-            <p class="shoot__author">Автор фото: Антон</p>
-          </div>
-
-          <div class="shoot__like">
-            <button class="button-like" type="button">
-              <img class="button-like__icon" src="/source/img/svg/like-icon.svg" width="23" height="21"
-                alt="Палец вверх">
-              <span class="visually-hidden">Лайк</span>
-            </button>
-            <span class="shoot__like-count">254</span>
-          </div>
-        </div>
-      </article>
+      </div>
     </section>
 
-    <section class="main-container__video-player">
-      <header class="main-container__header main-container__header--video">
-        <h2 class="main-container__title">Все еще сомневаетесь?</h2>
-        <p class="main-container__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-          очередной раз!</p>
-      </header>
-
-      <article class="video-clip">
-        <h3 class="visually-hidden">Видео-презентация о Седоне</h3>
-        <img class="video-clip__image" src="/source/img/jpeg-png/video-mobile-preview.jpg" width="280" height="177"
-          alt="Видео-презентация Седоны">
-
-        <div class="video-controls__pushbuttons">
-          <button class="video-controls__button video-controls__button--play" type="button">
-            <span class="visually-hidden">Воспроизвести</span>
-            <img class="video-controls__icon" src="/source/img/svg/play-icon.svg" width="48" height="54"
-              alt="Кнопка плэй">
-          </button>
-        </div>
-      </article>
-    </section>
   </main>
 
   <!-- Подвал -->
 
   <footer class="footer-main">
-    <div class="footer-main__column">
-      <p class="footer-main__hashtag">#visitsedona</p>
-    </div>
+    <div class="footer-main__wrapper">
+      <div class="footer-main__hashtag hashtag">
+        <p class="hashtag__title title">#visitsedona</p>
+      </div>
 
-    <div class="footer-main__column">
-      <ul class="socials">
-        <li class="socials__item">
-          <a class="socials__link" href="#">
-            <span class="visually-hidden">ВКонтакте</span>
-            <img class="socials__icon" src="/source/img/svg/vk.svg" width="24" height="24" alt="ВКонтакте">
-          </a>
-        </li>
+      <div class="footer-main__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+              <img class="socials__icon" src="/source/img/svg/vk.svg" width="24" height="14" alt="ВКонтакте">
+            </a>
+          </li>
 
-        <li class="socials__item">
-          <a class="socials__link" href="#">
-            <span class="visually-hidden">Telegram</span>
-            <img class="socials__icon" src="/source/img/svg/telegram.svg" width="24" height="24" alt="Telegram">
-          </a>
-        </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+              <img class="socials__icon" src="/source/img/svg/telegram.svg" width="22" height="18" alt="Telegram">
+            </a>
+          </li>
 
-        <li class="socials__item">
-          <a class="socials__link" href="#">
-            <span class="visually-hidden">YouTube</span>
-            <img class="socials__icon" src="/source/img/svg/youtube.svg" width="24" height="24" alt="YouTube">
-          </a>
-        </li>
-      </ul>
-    </div>
+          <li class="socials__item">
+            <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">YouTube</span>
+              <img class="socials__icon" src="/source/img/svg/youtube.svg" width="20" height="14" alt="YouTube">
+            </a>
+          </li>
+        </ul>
+      </div>
 
-    <div class="footer-main__column">
-      <span class="footer-main__copyright-text">Разработано</span>
-      <a class="footer-main__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"> <img
-          class="footer-main__icon" src="/source/img/svg/htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a>
+      <div class="footer-main__copyright copyright">
+
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="copyright__description description">Разработано</p>
+          <img class="copyright__icon" src="/source/img/svg/htmlacademy.svg" width="27" height="35" alt="HTML Academy">
+        </a>
+      </div>
+
     </div>
   </footer>
-
+  </div>
 </body>
 
 </html>

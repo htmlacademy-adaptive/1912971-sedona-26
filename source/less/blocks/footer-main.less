@@ -1,0 +1,137 @@
+.footer-main__wrapper {
+  background-color: @white;
+  padding: 28px 0 22px 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 36px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    padding: 0;
+    min-height: 120px;
+  }
+}
+
+.hashtag-title.title {
+  font-size: 21px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 33px;
+  margin-top: 1px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.socials__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.socials__link {
+  text-decoration: none;
+  width: 48px;
+  height: 48px;
+  background-color: @blue;
+  display: block;
+  position: relative;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    .socials__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.socials__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.footer-main__copyright {
+
+  margin-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 120px;
+    top: 43px;
+    position: absolute;
+  }
+}
+
+.footer-main__socials {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 38px;
+  }
+}
+
+.footer-main__hashtag {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    left: 118px;
+    top: 50px;
+  }
+}
+
+.copyright__description {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  margin-right: 13px;
+  margin-top: 8px;
+  color: @black;
+}
+
+.copyright__link {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+
+  &:hover {
+    .copyright__description,
+    .copyright__icon {
+      color: @blue;
+      fill: @blue;
+    }
+  }
+
+  &:active {
+    .copyright__description,
+    .copyright__icon {
+      opacity: 0.3;
+    }
+  }
+}
