@@ -1,0 +1,243 @@
+.main-nav--closed {
+  display: none;
+}
+
+.main-nav {
+  background-color: @blue;
+  position: absolute;
+  width: 320px;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    background-color: @white;
+    display: flex;
+    z-index: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    background-color: @white;
+    display: flex;
+    z-index: 0;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+  }
+}
+
+.nav-list-item__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  line-height: 27px;
+  display: block;
+  position: relative;
+  padding: 16px 11px 11px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+    color: @black;
+    width: 153px;
+    padding: 18px 0 17px 0;
+    display: block;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: @white;
+      color: @blue;
+    }
+
+    &:active {
+      background-color: @white;
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 14px;
+    line-height: 21px;
+    color: @black;
+    width: 240px;
+    padding: 18px 0 17px 0;
+    display: block;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: @white;
+      color: @blue;
+    }
+
+    &:active {
+      background-color: @white;
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .nav-list__item:nth-child(2n):not(:last-child) {
+    margin-right: 153px;
+  }
+
+  .nav-list__item--current .site-list-item__link {
+    color: #766357;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nav-list__item:nth-child(2n):not(:last-child) {
+    margin-right: 240px;
+  }
+
+  .nav-list__item--current .site-list-item__link {
+    color: #766357;
+  }
+}
+
+.main-nav--closed.main-nav__toggle--nojs {
+  display: block;
+}
+
+
+.main-nav__toggle--closed {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  border: none;
+  background: none;
+  padding: 0;
+  height: 22px;
+  width: 23px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__toggle--closed::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 4px;
+  width: 23px;
+  background-color: #81b3d2;
+  box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
+}
+
+.main-nav__toggle--opened {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  right: 17px;
+  top: 26px;
+  border: none;
+  background: none;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 3;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    opacity: 0.6;
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  height: 7px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
