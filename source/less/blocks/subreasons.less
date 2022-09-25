@@ -1,0 +1,97 @@
+.subreasons-wrapper {
+  margin: 24px 18px 29px 65px;
+  width: 240px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 256px 256px 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+  }
+}
+
+.reasons__item--house,
+.reasons__item--hamburger,
+.reasons__item--souvenir {
+  background-color: @white;
+  padding: 8px 0 22px 0;
+
+  .reasons__description {
+    text-align: left;
+
+    @media (min-width: @tablet-width) {
+      text-align: center;
+    }
+
+    @media (min-width: @desktop-width) {
+      text-align: center;
+    }
+  }
+
+  .reasons__title {
+    margin-bottom: 16px;
+    text-align: left;
+
+    @media (min-width: @tablet-width) {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: @desktop-width) {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 158px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 158px;
+  }
+}
+
+.reasons__item--house {
+  .reasons__description {
+    @media (min-width: @tablet-width) {
+      padding: 0 31px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 50px;
+    }
+  }
+}
+
+.reasons__item--souvenir {
+  .reasons__description {
+    @media (min-width: @tablet-width) {
+      padding: 0 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 30px;
+    }
+  }
+}
+
+.reasons__item--hamburger {
+  .reasons__description {
+    @media (min-width: @tablet-width) {
+      padding: 0 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 50px;
+    }
+  }
+}

@@ -5,6 +5,23 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="source/img/favicons/ms-icon-144x144.png">
 </head>
 
 <body class="page__body">
@@ -78,7 +95,15 @@
                 там течёт своя жизнь</p>
             </li>
             <li class="reasons__item reasons-first-photo">
-              <img class="reasons__image" src="/source/img/jpeg-png/mobile/photo-city-mobile.jpg" width="320" height="260" alt="Городской пейзаж Седоны">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/desktop-webp/photo-city-desktop.webp, img/webp/desktop-webp/photo-city-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/tablet-webp/photo-city-tablet.webp, img/webp/tablet-webp/photo-city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/mobile-webp/photo-city-mobile.webp, img/webp/mobile-webp/photo-city-mobile@2x.webp 2x">
+                <source media="(min-width: 1280px)" srcset="img/jpeg-png/destop/photo-city-desktop.jpg, img/jpeg-png/destop/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/jpeg-png/tablet/photo-city-tablet.jpg, img/photo-city-tablet@2x.jpg 2x">
+              <img class="reasons__image" src="/source/img/jpeg-png/mobile/photo-city-mobile.jpg" width="320"
+                height="260" srcset="img/jpeg-png/mobile/photo-city-mobile@2x.jpg 2x" alt="Городской пейзаж Седоны">
+              </picture>
             </li>
           </ul>
           <div class="subreasons-wrapper">
@@ -102,8 +127,15 @@
             <p class="reasons__description description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </li>
           <li class="reasons__item reasons-second-photo">
-            <img class="reasons__image" src="/source/img/jpeg-png/mobile/photo-gallery-2-mobile.jpg" width="320" height="260"
-              alt="Мост дьявола">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/webp/desktop-webp/photo-bridge-desktop.webp, img/webp/desktop-webp/photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/tablet-webp/photo-bridge-tablet.webp, img/webp/tablet-webp/photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/mobile-webp/photo-bridge-mobile.webp, img/webp/mobile-webp/photo-bridge-mobile@2x.webp 2x">
+              <source media="(min-width: 1280px)" srcset="img/jpeg-png/destop/photo-bridge-desktop.jpg, img/jpeg-png/destop/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/jpeg-png/tablet/photo-bridge-tablet.jpg, img/photo-bridge-tablet@2x.jpg 2x">
+            <img class="reasons__image" src="/source/img/jpeg-png/mobile/photo-bridge-mobile.jpg" width="320"
+              height="260" srcset="img/jpeg-png/mobile/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
+            </picture>
           </li>
 
           <li class="reasons__item reasons-extra-wrapper-1">
@@ -194,6 +226,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

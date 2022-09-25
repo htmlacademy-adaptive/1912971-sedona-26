@@ -6,6 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Форма отзыва</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="source/img/favicons/ms-icon-144x144.png">
 </head>
 
 <body class="page__body">
@@ -55,8 +72,8 @@
 
       <header class="promo">
         <div class="promo__wrapper promo-wrapper-background wrapper-form">
-          <img class="promo-wrapper-background__logo-form" src="/source/img/svg/sedona-form-logo.svg" width="229" height="39"
-            alt="Седона">
+          <img class="promo-wrapper-background__logo-form" src="/source/img/svg/sedona-form-logo.svg" width="229"
+            height="39" alt="Седона">
         </div>
         <div class="promo__wrapper promo-form-subwrapper-background">
           <h1 class="promo-form-subwrapper-background__title title">Оставьте свой отзыв</h1>
@@ -74,15 +91,15 @@
 
               <legend class="form-item__subtitle title">Представьтесь:</legend>
               <label class="form-item__field item-field" for="firstname">Имя*:</label>
-              <input class="item-field__control item-field__control--firstname" type="text" name="firstname"
+              <input class="item-field__control item-field__control--name" type="text" name="firstname"
                 placeholder="Пётр" id="firstname">
 
               <label class="form-item__field item-field" for="lastname">Фамилия*:</label>
-              <input class="item-field__control item-field__control--lastname" type="text" name="lastname"
+              <input class="item-field__control item-field__control--name" type="text" name="lastname"
                 placeholder="Пустота" id="lastname">
 
               <label class="form-item__field item-field" for="middlename">Отчество:</label>
-              <input class="ftem-field__control item-field__control--middlename" type="text" name="middlename"
+              <input class="ftem-field__control item-field__control--name" type="text" name="middlename"
                 placeholder="Викторович" id="middlename">
 
             </fieldset>
@@ -94,11 +111,13 @@
                 телефон*:</label>
               <input class="item-field__control item-field__control--contact-number" type="tel" name="phone"
                 placeholder="Введите телефон" id="phone">
+              <span class="item-field__icon-phone"></span>
 
               <label class="fform-item__field item-field" for="email">Электронная
                 почта*:</label>
               <input class="item-field__control item-field__control--email" type="email" name="email"
                 placeholder="Введите e-mail" id="email">
+              <span class="item-field__icon-email"></span>
 
             </fieldset>
 

@@ -6,6 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Фото и видео</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="source/img/favicons/ms-icon-144x144.png">
 </head>
 
 <body class="page__body">
@@ -75,7 +92,13 @@
 
         <ul class="photo-gallery__list">
           <li class="photo-gallery__item">
-            <img src="/source/img/jpeg-png/mobile/photo-gallery-1-mobile.jpg" width="280" height="280" alt="Просторы">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="img/jpeg-png/desktop/photo-gallery-1-desktop.jpg, img/jpeg-png/desktop/photo-gallery-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/jpeg-png/tablet/photo-gallery-1-tablet.jpg, img/jpeg-png/tablet/photo-gallery-1-tablet@2x.jpg 2x">
+              <img src="/source/img/jpeg-png/mobile/photo-gallery-1-mobile.jpg" width="280" height="280" alt="Просторы">
+            </picture>
 
             <div class="photo-gallery-item-wrapper">
               <p class="photo-gallery-item__title title">Неродные просторы</p>
@@ -89,7 +112,13 @@
           </li>
 
           <li class="photo-gallery__item">
-            <img src="/source/img/jpeg-png/mobile/photo-gallery-2-mobile.jpg" width="280" height="280" alt="Кактус">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="img/jpeg-png/desktop/photo-gallery-2-desktop.jpg, img/jpeg-png/desktop/photo-gallery-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/jpeg-png/tablet/photo-gallery-2-tablet.jpg, img/jpeg-png/tablet/photo-gallery-2-tablet@2x.jpg 2x">
+              <img src="/source/img/jpeg-png/mobile/photo-gallery-2-mobile.jpg" width="280" height="280" alt="Кактус">
+            </picture>
 
             <div class="photo-gallery-item-wrapper">
               <p class="photo-gallery-item__title title">Местная растительность</p>
@@ -103,8 +132,13 @@
           </li>
 
           <li class="photo-gallery__item">
-            <img src="/source/img/jpeg-png/mobile/photo-gallery-3-mobile.jpg" width="280" height="280" alt="Дорога">
-
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="img/jpeg-png/desktop/photo-gallery-3-desktop.jpg, img/jpeg-png/desktop/photo-gallery-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/jpeg-png/tablet/photo-gallery-3-tablet.jpg, img/jpeg-png/tablet/photo-gallery-3-tablet@2x.jpg 2x">
+              <img src="/source/img/jpeg-png/mobile/photo-gallery-3-mobile.jpg" width="280" height="280" alt="Дорога">
+            </picture>
             <div class="photo-gallery-item-wrapper">
               <p class="photo-gallery-item__title title">Дорога на север</p>
               <p class="photo-gallery-item__author description">Автор фото: Петр</p>
@@ -117,7 +151,14 @@
           </li>
 
           <li class="photo-gallery__item">
-            <img src="/source/img/jpeg-png/mobile/photo-gallery-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="img/jpeg-png/desktop/photo-gallery-4-desktop.jpg, img/jpeg-png/desktop/photo-gallery-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/jpeg-png/tablet/photo-gallery-4-tablet.jpg, img/jpeg-png/tablet/photo-gallery-4-tablet@2x.jpg 2x">
+              <img src="/source/img/jpeg-png/mobile/photo-gallery-4-mobile.jpg" width="280" height="280"
+                alt="Мост дьявола">
+            </picture>
 
             <div class="photo-gallery-item-wrapper">
               <p class="photo-gallery-item__title title">Мост дьявола</p>
@@ -133,12 +174,12 @@
 
         <section class="photo-gallery__item--video-item">
           <div class="photo-gallery-item-video-wrapper">
-              <p class="photo-gallery-item__title-video title">Все еще сомневаетесь?</p>
-              <p class="photo-gallery-item__description-video description">
-                  Смотрите видеопрезентацию и<br />
-                  скорее за билетами, пока они не<br />
-                  подорожали в очередной раз!
-              </p>
+            <p class="photo-gallery-item__title-video title">Все еще сомневаетесь?</p>
+            <p class="photo-gallery-item__description-video description">
+              Смотрите видеопрезентацию и<br />
+              скорее за билетами, пока они не<br />
+              подорожали в очередной раз!
+            </p>
           </div>
 
           <div class="video-wrapper">
